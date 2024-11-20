@@ -14,7 +14,9 @@ class MyApp extends StatelessWidget {
         fontFamily: AppConstants.fontFamily,
         useMaterial3: true,
       ),
-      home: const SplashPage(),
+      home: const SplashPage(
+        key: Key('SplashPage'),
+      ),
       debugShowCheckedModeBanner: false,
     );
   }

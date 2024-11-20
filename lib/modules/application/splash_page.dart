@@ -10,7 +10,9 @@ class SplashPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: AppConstants.colors.primary,
-      child: const CenteredLogo(),
+      child: const CenteredLogo(
+        key: Key('CenteredLogo'),
+      ),
     );
   }
 }
